@@ -80,3 +80,23 @@ We use [Keras](https://keras.io/), the Python Deep Learning library. Keras workf
 - Configure the learning process by selecting the loss function, the optimizer and some metrics to monitor.
 - Fit the model.
 
+### Convolutional Network 
+The convolutional neural networks (convnets) are constructed with a structure that will contain 3 types of layers: convolutional layer, reduction or pooling layer and classifier layer. Table 3 summarizes the architecture of the convnet used in the classification of faults, consists of four convolutional layers (Conv2D), followed by four layers of reduction (MaxPooling2D), one layer to flatten and two dense layers at the end. Our network is illustrated in Figure 1.
+
+*Table 3. Structure of the convnet*
+
+|Layer (type)|                  	Output Shape|
+|:-----|:-----|
+conv2d_1 (Conv2D)            	(None, 148, 148, 32)            
+max_pooling2d_1	(None, 74, 74, 32)                
+conv2d_2 (Conv2D)            	(None, 72, 72, 64)            
+max_pooling2d_2	(None, 36, 36, 64)               
+conv2d_3 (Conv2D)            	(None, 34, 34, 128)           
+max_pooling2d_3	(None, 17, 17, 128)               
+conv2d_4 (Conv2D)           	(None, 15, 15, 128)          
+max_pooling2d_4	(None, 7, 7, 128)
+flatten_1 (Flatten)          	(None, 6272)                       
+dense_1 (Dense)              	(None, 512)                  
+dense_2 (Dense)              	(None, 15)                      
+
+
