@@ -8,17 +8,17 @@ There is no universal system to identify surface distress, the classification of
 
 *Table 1. INVIAS standard distress*
 
-| Deterioros del Tipo A | |
+| Deteriorations Type A| |
 |:-----|:-----|
-| **Nombre del Deterioro** | **Código** |
+| **Deterioration Name** | **Code** |
 | Ahuellamiento	| AH |
 |Depresiones o hundimientos longitudinales|	DL |
 |Depresiones o hundimientos transversales|	DT |
 |Fisuras longitudinales por fatiga| FLF|
 |Fisuras piel de cocodrilo|	FPC|
 |Bacheos y parcheos|	B|
-|**Deterioros del tipo B**| |
-|**Nombre del Deterioro**|	**Código** |
+|**Deteriorations Type B**| |
+|**Deterioration Name**|	**Code** |
 |Fisura longitudinal de junta de construcción|	FLJ|
 |Fisura transversal de junta de construcción|	FTJ|
 |Fisuras de contracción térmica|	FCT|
@@ -43,32 +43,32 @@ There are a total of 1820 pavement images, with 5947 labels distributed accordin
 
 *Table 2: Number of labels per fault*
 
-|Nombre del Deterioro|	Código|	Fallas Etiquetadas|
+|Deterioration Name|	Code|	Labeled failures|
 |:-----|:-----|:---|
 |Ahuellamiento|	AH|	0|
 |Depresiones o hundimientos longitudinales|	DL|	0|
 Depresiones o hundimientos transversales|	DT|	0
-Fisuras longitudinales por fatiga	FLF	321
-Fisuras piel de cocodrilo	FPC	726
-Bacheos y parcheos	B	439
-Fisura longitudinal de junta de construcción	FLJ	736
-Fisura transversal de junta de construcción	FTJ	152
-Fisuras de contracción térmica	FCT	908
-Fisuras parabólicas	FP	28
-Fisura de borde	FB	298
-Ojos de pescado	O	283
-Desplazamiento, abultamiento o ahuellamiento de la mezcla	DM	0
-Pérdida de la película de ligante	PL	473
-Pérdida de agregados	PA	246
-Descascaramiento	D	146
-Pulimento de agregados	PU	378
-Exudación	EX	213
-Afloramiento de mortero	AM	1
-Afloramiento de agua	AA	0
-Desintegración de los bordes del pavimento	DB	274
-Escalonamiento entrecalzada y berma	ECB	249
-Erosión de las bermas	EB	73
-Segregación	S	3
-Total Imágenes 		5947
+Fisuras longitudinales por fatiga|	FLF|	321
+Fisuras piel de cocodrilo|	FPC|	726
+Bacheos y parcheos|	B|	439
+Fisura longitudinal de junta de construcción|	FLJ|	736
+Fisura transversal de junta de construcción|	FTJ|	152
+Fisuras de contracción térmica|	FCT|	908
+Fisuras parabólicas|	FP|	28
+Fisura de borde|	FB|	298
+Ojos de pescado|	O|	283
+Desplazamiento, abultamiento o ahuellamiento de la mezcla|	DM|	0
+Pérdida de la película de ligante|	PL|	473
+Pérdida de agregados|	PA|	246
+Descascaramiento|	D|	146
+Pulimento de agregados|	PU|	378
+Exudación|	EX|	213
+Afloramiento de mortero|	AM|	1
+Afloramiento de agua|	AA|	0
+Desintegración de los bordes del pavimento|	DB|	274
+Escalonamiento entrecalzada y berma|	ECB|	249
+Erosión de las bermas|	EB|	73
+Segregación|	S|	3
+**Total Images| 		|5947
 
 
