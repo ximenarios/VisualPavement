@@ -73,3 +73,10 @@ Segregación|	S|	3
 
 For some classes we have very little or no data, therefore it was decided to implement the system for the classification of only 15 fault classes by selecting the categories that had more than 145 labels. Data were divided into 80% for training, 10% for validation and 10% for test.
 
+## Building our network 
+We use Keras, the Python Deep Learning library. Keras workflow is as follows:
+•	 Define training data: input tensors and target tensors.
+•	 Define a network of layers (model) that maps its inputs to its objectives.
+•	Configure the learning process by selecting the loss function, the optimizer and some metrics to monitor.
+•	Fit the model.
+
