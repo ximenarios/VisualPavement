@@ -101,6 +101,6 @@ dense_2 (Dense)|              	(None, 15)
 
 [Codigo](https://github.com/ximenarios/VisualPavement/blob/master/VisualPavConvnets.ipynb)
 
-https://github.com/ximenarios/VisualPavement/blob/master/VisualPavConvnets.ipynb#L18
+https://github.com/ximenarios/VisualPavement/blob/master/VisualPavConvnets.ipynb#L18-L20
 
 https://github.com/ximenarios/VisualPavement/blob/1c9dbd6c9455fe4bb18d564bc74a9c2a952a8915/VisualPavConvnets.ipynb#L66
