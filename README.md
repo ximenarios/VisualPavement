@@ -9,32 +9,33 @@ There is no universal system to identify surface distress, the classification of
 
 | Deterioros del Tipo A |
 | --------------------- |
-
 | Nombre del Deterioro | Código |
 | ---------- | ----------- |
 | Ahuellamiento	| AH |
-|Depresiones o hundimientos longitudinales |	DL |
-|Depresiones o hundimientos transversales |	DT |
-|Fisuras longitudinales por fatiga	FLF|
-|Fisuras piel de cocodrilo	FPC|
-|Bacheos y parcheos	B|
+|Depresiones o hundimientos longitudinales|	DL |
+|Depresiones o hundimientos transversales|	DT |
+|Fisuras longitudinales por fatiga| FLF|
+|Fisuras piel de cocodrilo|	FPC|
+|Bacheos y parcheos|	B|
 |Deterioros del tipo B|
-|Nombre del Deterioro	Código|
-|Fisura longitudinal de junta de construcción	FLJ|
-|Fisura transversal de junta de construcción	FTJ|
-|Fisuras de contracción térmica	FCT|
-|Fisuras parabólicas	FP|
-|Fisura de borde	FB|
-|Ojos de pescado	O|
-|Desplazamiento, abultamiento o ahuellamiento de la mezcla	DM|
-|Pérdida de la película de ligante	PL|
-|Pérdida de agregados	PA|
-|Descascaramiento	D|
-|Pulimento de agregados	PU|
-|Exudación	EX|
-|Afloramiento de mortero	AM|
-|Afloramiento de agua	AA|
-|Desintegración de los bordes del pavimento	DB|
-|Escalonamiento entrecalzada y berma	ECB|
-|Erosión de las bermas	EB|
-|Segregación	S|
+| --------------------- |
+|Nombre del Deterioro|	Código|
+| ---------- | ----------- |
+|Fisura longitudinal de junta de construcción|	FLJ|
+|Fisura transversal de junta de construcción|	FTJ|
+|Fisuras de contracción térmica|	FCT|
+|Fisuras parabólicas|	FP|
+|Fisura de borde|	FB|
+|Ojos de pescado|	O|
+|Desplazamiento, abultamiento o ahuellamiento de la mezcla|	DM|
+|Pérdida de la película de ligante|	PL|
+|Pérdida de agregados|	PA|
+|Descascaramiento|	D|
+|Pulimento de agregados|	PU|
+|Exudación|	EX|
+|Afloramiento de mortero|	AM|
+|Afloramiento de agua|	AA|
+|Desintegración de los bordes del pavimento|	DB|
+|Escalonamiento entrecalzada y berma|	ECB|
+|Erosión de las bermas|	EB|
+|Segregación|	S|
