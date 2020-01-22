@@ -69,6 +69,6 @@ Desintegración de los bordes del pavimento|	DB|	274
 Escalonamiento entrecalzada y berma|	ECB|	249
 Erosión de las bermas|	EB|	73
 Segregación|	S|	3
-**Total Images| 		|5947
+**Total Images**| 		|**5947**
 
 
