@@ -37,3 +37,38 @@ There is no universal system to identify surface distress, the classification of
 |Escalonamiento entrecalzada y berma|	ECB|
 |Erosión de las bermas|	EB|
 |Segregación|	S|
+
+##Training set
+There are a total of 1820 pavement images, with 5947 labels distributed according to what is related in Table 2.
+
+*Table 2: Number of labels per fault*
+
+|Nombre del Deterioro|	Código|	Fallas Etiquetadas|
+|:-----|:-----|:---|
+|Ahuellamiento|	AH|	0|
+|Depresiones o hundimientos longitudinales|	DL|	0|
+Depresiones o hundimientos transversales	DT	0
+Fisuras longitudinales por fatiga	FLF	321
+Fisuras piel de cocodrilo	FPC	726
+Bacheos y parcheos	B	439
+Fisura longitudinal de junta de construcción	FLJ	736
+Fisura transversal de junta de construcción	FTJ	152
+Fisuras de contracción térmica	FCT	908
+Fisuras parabólicas	FP	28
+Fisura de borde	FB	298
+Ojos de pescado	O	283
+Desplazamiento, abultamiento o ahuellamiento de la mezcla	DM	0
+Pérdida de la película de ligante	PL	473
+Pérdida de agregados	PA	246
+Descascaramiento	D	146
+Pulimento de agregados	PU	378
+Exudación	EX	213
+Afloramiento de mortero	AM	1
+Afloramiento de agua	AA	0
+Desintegración de los bordes del pavimento	DB	274
+Escalonamiento entrecalzada y berma	ECB	249
+Erosión de las bermas	EB	73
+Segregación	S	3
+Total Imágenes 		5947
+
+
