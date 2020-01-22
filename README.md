@@ -99,4 +99,4 @@ flatten_1 (Flatten)|          	(None, 6272)
 dense_1 (Dense)|              	(None, 512)                  
 dense_2 (Dense)|              	(None, 15)                      
 
-
+[Contribution guidelines for this project](docs/VisualPavConvnets.ipynb)
