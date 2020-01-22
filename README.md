@@ -8,7 +8,7 @@ There is no universal system to identify surface distress, the classification of
 
 
 | Deterioros del Tipo A | |
-|--|--|
+|:-----|:-----|
 | Nombre del Deterioro | Código |
 | Ahuellamiento	| AH |
 |Depresiones o hundimientos longitudinales|	DL |
