@@ -47,7 +47,7 @@ There are a total of 1820 pavement images, with 5947 labels distributed accordin
 |:-----|:-----|:---|
 |Ahuellamiento|	AH|	0|
 |Depresiones o hundimientos longitudinales|	DL|	0|
-Depresiones o hundimientos transversales	DT	0
+Depresiones o hundimientos transversales|	DT|	0
 Fisuras longitudinales por fatiga	FLF	321
 Fisuras piel de cocodrilo	FPC	726
 Bacheos y parcheos	B	439
