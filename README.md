@@ -87,16 +87,16 @@ The convolutional neural networks (convnets) are constructed with a structure th
 
 |Layer (type)|                  	Output Shape|
 |:-----|:-----|
-conv2d_1 (Conv2D)            	(None, 148, 148, 32)            
-max_pooling2d_1	(None, 74, 74, 32)                
-conv2d_2 (Conv2D)            	(None, 72, 72, 64)            
-max_pooling2d_2	(None, 36, 36, 64)               
-conv2d_3 (Conv2D)            	(None, 34, 34, 128)           
-max_pooling2d_3	(None, 17, 17, 128)               
-conv2d_4 (Conv2D)           	(None, 15, 15, 128)          
-max_pooling2d_4	(None, 7, 7, 128)
-flatten_1 (Flatten)          	(None, 6272)                       
-dense_1 (Dense)              	(None, 512)                  
-dense_2 (Dense)              	(None, 15)                      
+conv2d_1 (Conv2D)|            	(None, 148, 148, 32)            
+max_pooling2d_1|	(None, 74, 74, 32)                
+conv2d_2 (Conv2D)|            	(None, 72, 72, 64)            
+max_pooling2d_2|	(None, 36, 36, 64)               
+conv2d_3 (Conv2D)|            	(None, 34, 34, 128)           
+max_pooling2d_3|	(None, 17, 17, 128)               
+conv2d_4 (Conv2D)|           	(None, 15, 15, 128)          
+max_pooling2d_4|	(None, 7, 7, 128)
+flatten_1 (Flatten)|          	(None, 6272)                       
+dense_1 (Dense)|              	(None, 512)                  
+dense_2 (Dense)|              	(None, 15)                      
 
 
