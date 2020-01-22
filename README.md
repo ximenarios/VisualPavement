@@ -4,7 +4,7 @@
 To maintain a road infrastructure in good condition, periodic evaluations are needed to determine its status and plan appropriate intervention actions. The road evaluation contains tests of the surface condition, which can be performed manually or automatically. The objective of this research work is to propose a methodology for the automatic classification of surface faults in flexible pavements.
 
 ## Surface distress in asphalt pavement
-There is no universal system to identify surface distress, the classification of the types of distress is done in comparison with the manuals developed by different institutions. In this investigation, the classification of the deteriorations is carried out in accordance with what is established in Colombia by the National Road Institute (INVIAS). INVIAS has adopted the VIZIR methodology as a tool to assess the condition of asphalt pavement deterioration through technical standard E - 813 (INVIAS, 2013), this standard considers two categories of deterioration: Type A (structural) and type B (functional). Table 1 presents a list of deficiencies and their identification code.
+There is no universal system to identify surface distress, the classification of the types of distress is done in comparison with the manuals developed by different institutions. In this investigation, the classification of the deteriorations is carried out in accordance with what is established in Colombia by the National Road Institute (INVIAS). INVIAS has adopted the VIZIR methodology as a tool to assess the condition of asphalt pavement deterioration through technical standard E - 813 (INVIAS, 2013), [INVIAS](https://www.invias.gov.co/index.php/archivo-y-documentos/documentos-tecnicos/manuales-de-inspeccion-de-obras/974-manual-para-la-inspeccion-visual-de-pavimentos-flexibles/filethis)  standard considers two categories of deterioration: Type A (structural) and type B (functional). Table 1 presents a list of deficiencies and their identification code.
 
 *Table 1. INVIAS standard distress*
 
@@ -74,7 +74,7 @@ Segregación|	S|	3
 For some classes we have very little or no data, therefore it was decided to implement the system for the classification of only 15 fault classes by selecting the categories that had more than 145 labels. Data were divided into 80% for training, 10% for validation and 10% for test.
 
 ## Building our network 
-We use Keras [Keras](https://keras.io/), the Python Deep Learning library. Keras workflow is as follows:
+We use [Keras](https://keras.io/), the Python Deep Learning library. Keras workflow is as follows:
 - Define training data: input tensors and target tensors.
 - Define a network of layers (model) that maps its inputs to its objectives.
 - Configure the learning process by selecting the loss function, the optimizer and some metrics to monitor.
