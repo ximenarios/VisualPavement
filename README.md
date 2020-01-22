@@ -71,4 +71,5 @@ Erosión de las bermas|	EB|	73
 Segregación|	S|	3
 **Total Images**| 		|**5947**
 
+For some classes we have very little or no data, therefore it was decided to implement the system for the classification of only 15 fault classes by selecting the categories that had more than 145 labels. Data were divided into 80% for training, 10% for validation and 10% for test.
 
