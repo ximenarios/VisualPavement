@@ -103,3 +103,4 @@ dense_2 (Dense)|              	(None, 15)
 
 [Contribution guidelines for this project](docs/VisualPavConvnets.ipynb)
 
+VisualPavConvnets.ipynb
