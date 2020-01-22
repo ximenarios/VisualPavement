@@ -75,8 +75,8 @@ For some classes we have very little or no data, therefore it was decided to imp
 
 ## Building our network 
 We use Keras, the Python Deep Learning library. Keras workflow is as follows:
-•	 Define training data: input tensors and target tensors.
-•	 Define a network of layers (model) that maps its inputs to its objectives.
-•	Configure the learning process by selecting the loss function, the optimizer and some metrics to monitor.
-•	Fit the model.
+• Define training data: input tensors and target tensors.
+• Define a network of layers (model) that maps its inputs to its objectives.
+• Configure the learning process by selecting the loss function, the optimizer and some metrics to monitor.
+• Fit the model.
 
