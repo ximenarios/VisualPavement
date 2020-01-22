@@ -19,7 +19,6 @@ There is no universal system to identify surface distress, the classification of
 |Deterioros del tipo B| |
 | ---------- | ----------- |
 |Nombre del Deterioro|	Código|
-| ---------- | ----------- |
 |Fisura longitudinal de junta de construcción|	FLJ|
 |Fisura transversal de junta de construcción|	FTJ|
 |Fisuras de contracción térmica|	FCT|
