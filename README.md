@@ -38,7 +38,7 @@ There is no universal system to identify surface distress, the classification of
 |Erosión de las bermas|	EB|
 |Segregación|	S|
 
-##Training set
+## Training set
 There are a total of 1820 pavement images, with 5947 labels distributed according to what is related in Table 2.
 
 *Table 2: Number of labels per fault*
