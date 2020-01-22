@@ -9,6 +9,7 @@ There is no universal system to identify surface distress, the classification of
 
 | Deterioros del Tipo A |
 | --------------------- |
+
 | Nombre del Deterioro | Código |
 | ---------- | ----------- |
 | Ahuellamiento	| AH |
@@ -17,8 +18,10 @@ There is no universal system to identify surface distress, the classification of
 |Fisuras longitudinales por fatiga| FLF|
 |Fisuras piel de cocodrilo|	FPC|
 |Bacheos y parcheos|	B|
+
 |Deterioros del tipo B|
 | --------------------- |
+
 |Nombre del Deterioro|	Código|
 | ---------- | ----------- |
 |Fisura longitudinal de junta de construcción|	FLJ|
