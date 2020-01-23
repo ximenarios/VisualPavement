@@ -99,6 +99,6 @@ flatten_1 (Flatten)|          	(None, 6272)
 dense_1 (Dense)|              	(None, 512)                  
 dense_2 (Dense)|              	(None, 15)                      
 
-[Codigo](https://github.com/ximenarios/VisualPavement/blob/master/VisualPavConvnets.ipynb)
+[Ver Codigo Convnet](https://github.com/ximenarios/VisualPavement/blob/master/VisualPavConvnets.ipynb)
 
 <img src="image/Figura1.png">
