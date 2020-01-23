@@ -84,7 +84,8 @@ We use [Keras](https://keras.io/), the Python Deep Learning library. Keras workf
 
 ### Convolutional Network 
 The convolutional neural networks (convnets) are constructed with a structure that will contain 3 types of layers: convolutional layer, reduction or pooling layer and classifier layer. Table 3 summarizes the architecture of the convnet used in the classification of faults, consists of four convolutional layers (Conv2D), followed by four layers of reduction (MaxPooling2D), one layer to flatten and two dense layers at the end. Our network is illustrated in Figure 1.
-[See code Convnet](https://github.com/ximenarios/VisualPavement/blob/master/VisualPavConvnets.ipynb)
+
+[See code Convnet](https://github.com/ximenarios/VisualPavement/blob/otro/VisualPavConvnets.ipynb)
 
 *Table 3. Structure of the convnet*
 
@@ -143,6 +144,8 @@ The convnets used for image classification are composed of two parts: they begin
 *Figure 4. Pre-trained network*
 
 We use the Xception, VGG16, VGG19, InceptionV3, InceptionResNetV2 and DenseNet121 models as a convolutional basis. These architectures are publicly available and can be imported into Keras from the keras.applications module. Then we train a classifier composed of two dense layers, the final layer is a “softmax” layer of 15 outputs, we select the loss function 'categorical_crossentropy', the optimizer 'rmsprop' and as a metric to monitor training and tests 'acc'. Table 4 lists the performance of these architectures.
+
+[See code Pre-trained](https://github.com/ximenarios/VisualPavement/blob/otro/VisualPavConvnets.ipynb)
 
 *Table 4. Pre-trained networks (feature extraction, executing the data set on the convolutional basis and using an independent classifier)*
 
