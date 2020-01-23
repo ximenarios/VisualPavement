@@ -144,4 +144,16 @@ The convnets used for image classification are composed of two parts: they begin
 
 We use the Xception, VGG16, VGG19, InceptionV3, InceptionResNetV2 and DenseNet121 models as a convolutional basis. These architectures are publicly available and can be imported into Keras from the keras.applications module. Then we train a classifier composed of two dense layers, the final layer is a “softmax” layer of 15 outputs, we select the loss function 'categorical_crossentropy', the optimizer 'rmsprop' and as a metric to monitor training and tests 'acc'. Table 4 lists the performance of these architectures.
 
+*Table 4. Pre-trained networks (feature extraction, executing the data set on the convolutional basis and using an independent classifier)*
+
+|convolutional base|	acc|	loss|	Training and validation accuracy |
+|:-----|:-----|:-----|:-----|
+Xception|	0.67|	3.23| 	<img src="image/ConvSinDA.png"> | 
+VGG16	0.63	1.49	 
+VGG19	0.59	1.55	 
+InceptionV3	0.67	3.23	 
+InceptionResNetV2	0.65	2.88	 
+DenseNet121	0.67	2.16	 
+
+
 
