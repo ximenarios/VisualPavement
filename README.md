@@ -100,3 +100,5 @@ dense_1 (Dense)|              	(None, 512)
 dense_2 (Dense)|              	(None, 15)                      
 
 [Codigo](https://github.com/ximenarios/VisualPavement/blob/master/VisualPavConvnets.ipynb)
+
+<img src="imagenes/figura1.png">
