@@ -106,11 +106,13 @@ As part of the "compilation" step we have:
 - Metrics to monitor during training and testing: 'acc'
 
 <img src="image/Figura1.png">
+
 *Figure 1. Convolutional neural networks*
 
 Training an image classification model using only a few data is a common situation, we reviewed a basic strategy to address the problem by training from scratch the model of the small convolutional network defined in Table 3, and this led us to an overfitting problem illustrated in Figure 2.
 
 <img src="image/ConvSinDA.png">
+
 *Figure 2. Training and validation accuracy*
 
 Figure 2 shows an overfitting feature. Our training accuracy increases to a value close to 100%, while our validation accuracy ranges from 50-60%.
