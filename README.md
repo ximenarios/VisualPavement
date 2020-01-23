@@ -148,7 +148,7 @@ We use the Xception, VGG16, VGG19, InceptionV3, InceptionResNetV2 and DenseNet12
 
 |Convolutional base|	acc|	loss|	Training and validation accuracy |
 |:-----|:-----|:-----|:-----|
-Xception|	0.67|	3.23| 	<img src="image/ConvSinDA.png"> | 
+Xception|	0.67|	3.23| 	<img src="image/Xception.png"> | 
 VGG16|	0.63|	1.49|	<img src="image/ConvSinDA.png"> |  
 VGG19|	0.59|	1.55| <img src="image/ConvSinDA.png"> | 	 
 InceptionV3|	0.67|	3.23| <img src="image/ConvSinDA.png"> | 	 
