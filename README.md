@@ -85,6 +85,8 @@ The convolutional neural networks (convnets) are constructed with a structure th
 
 *Table 3. Structure of the convnet*
 
+otra
+
 |Layer (type)|                  	Output Shape|
 |:-----|:-----|
 conv2d_1 (Conv2D)|            	(None, 148, 148, 32)            
