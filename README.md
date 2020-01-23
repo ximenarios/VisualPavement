@@ -138,7 +138,7 @@ There are two ways to take advantage of a pre-trained network: feature extractio
 The convnets used for image classification are composed of two parts: they begin with a series of pooling and convolution layers, and end with a densely connected classifier as illustrated in Figure 4. The first part is called the "convolutional base" of the model. The method consists of taking a previously trained convolutional base, executing the new data through it and feeding a new classifier with the data obtained. The feature extraction uses the representations previously learned by a network, to extract interesting features from new samples, these characteristics are executed through a new classifier, which is trained from scratch.
 
 
-<img src="image/figura4.png">
+<img src="image/Figura4.png">
 
 *Figure 4. Pre-trained network*
 
