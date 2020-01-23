@@ -155,5 +155,18 @@ InceptionV3|	0.67|	3.23| <img src="image/InceptionV3Base.png"> |
 InceptionResNetV2|	0.65|	2.88|<img src="image/InceptionResNetV2Base.png"> | 	 
 DenseNet121|	0.67|	2.16| <img src="image/DenseNet121Base.png"> | 	 
 
+We achieve a validation accuracy only slightly better than in the previous section, our graphs indicate that we are overfitting, despite using dropout with a fairly high rate. This is because this technique does not take advantage of data augmentation, which is useful to avoid overfitting with small data sets.
 
+A second technique for feature extraction, which allows data augmentation to be used during training, is to extend the model by adding dense layers to the convolutional base and execute everything from end to end. Table 5 lists the performance of these networks.
+
+*Table 5. Pre-trained networks (Extending the model by adding dense layers at the end)*
+
+|Convolutional base|	acc|	loss|	Training and validation accuracy |
+|:-----|:-----|:-----|:-----|
+Xception|	0.39|	4.38| 	<img src="image/Xception.png"> | 
+VGG16|	0.62|	1.32|	<img src="image/VGG16.png"> |  
+VGG19|	0.55|	1.41| <img src="image/VGG19.png"> | 	 
+InceptionV3|	0.39|	2.25| <img src="image/InceptionV3.png"> | 	 
+InceptionResNetV2|	0.40|	3.34|<img src="image/InceptionResNetV2.png"> | 	 
+DenseNet121|	0.5|	13.54| <img src="image/DenseNet121.png"> |
 
