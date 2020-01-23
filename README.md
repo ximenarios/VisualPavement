@@ -101,4 +101,10 @@ dense_2 (Dense)|              	(None, 15)
 
 [Ver Codigo Convnet](https://github.com/ximenarios/VisualPavement/blob/master/VisualPavConvnets.ipynb)
 
+We have 15 classes, so we use a “softmax” layer with 15 outputs at the end, which means that it will return an array of 15 probability scores. Each score defines the probability that an image belongs to one of the 15 categories of failures.
+As part of the "compilation" step we have:
+- A loss function: 'categorical_crossentropy'
+- An optimizer: 'rmsprop'
+- Metrics to monitor during training and testing: 'acc'
+
 <img src="image/Figura1.png">
