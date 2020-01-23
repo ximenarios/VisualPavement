@@ -81,7 +81,7 @@ We use [Keras](https://keras.io/), the Python Deep Learning library. Keras workf
 - Fit the model.
 
 ### Convolutional Network 
-The convolutional neural networks (convnets) are constructed with a structure that will contain 3 types of layers: convolutional layer, reduction or pooling layer and classifier layer. Table 3 summarizes the architecture of the convnet used in the classification of faults, consists of four convolutional layers (Conv2D), followed by four layers of reduction (MaxPooling2D), one layer to flatten and two dense layers at the end. Our network is illustrated in Figure 1.
+The convolutional neural networks (convnets) are constructed with a structure that will contain 3 types of layers: convolutional layer, reduction or pooling layer and classifier layer. Table 3 summarizes the architecture of the convnet used in the classification of faults, consists of four convolutional layers (Conv2D), followed by four layers of reduction (MaxPooling2D), one layer to flatten and two dense layers at the end. Our network is illustrated in Figure 1. [Ver Codigo Convnet](https://github.com/ximenarios/VisualPavement/blob/master/VisualPavConvnets.ipynb)
 
 *Table 3. Structure of the convnet*
 
@@ -98,8 +98,6 @@ max_pooling2d_4|	(None, 7, 7, 128)
 flatten_1 (Flatten)|          	(None, 6272)                       
 dense_1 (Dense)|              	(None, 512)                  
 dense_2 (Dense)|              	(None, 15)                      
-
-[Ver Codigo Convnet](https://github.com/ximenarios/VisualPavement/blob/master/VisualPavConvnets.ipynb)
 
 We have 15 classes, so we use a “softmax” layer with 15 outputs at the end, which means that it will return an array of 15 probability scores. Each score defines the probability that an image belongs to one of the 15 categories of failures.
 As part of the "compilation" step we have:
