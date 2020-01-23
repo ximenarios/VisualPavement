@@ -81,7 +81,7 @@ We use [Keras](https://keras.io/), the Python Deep Learning library. Keras workf
 - Fit the model.
 
 ### Convolutional Network 
-The convolutional neural networks (convnets) are constructed with a structure that will contain 3 types of layers: convolutional layer, reduction or pooling layer and classifier layer. Table 3 summarizes the architecture of the convnet used in the classification of faults, consists of four convolutional layers (Conv2D), followed by four layers of reduction (MaxPooling2D), one layer to flatten and two dense layers at the end. Our network is illustrated in Figure 1. [Ver Codigo Convnet](https://github.com/ximenarios/VisualPavement/blob/master/VisualPavConvnets.ipynb)
+The convolutional neural networks (convnets) are constructed with a structure that will contain 3 types of layers: convolutional layer, reduction or pooling layer and classifier layer. Table 3 summarizes the architecture of the convnet used in the classification of faults, consists of four convolutional layers (Conv2D), followed by four layers of reduction (MaxPooling2D), one layer to flatten and two dense layers at the end. Our network is illustrated in Figure 1. [see code Convnet](https://github.com/ximenarios/VisualPavement/blob/master/VisualPavConvnets.ipynb)
 
 *Table 3. Structure of the convnet*
 
@@ -106,3 +106,11 @@ As part of the "compilation" step we have:
 - Metrics to monitor during training and testing: 'acc'
 
 <img src="image/Figura1.png">
+*Figure 1. Convolutional neural networks*
+
+Training an image classification model using only a few data is a common situation, we reviewed a basic strategy to address the problem by training from scratch the model of the small convolutional network defined in Table 3, and this led us to an overfitting problem illustrated in Figure 2.
+
+<img src="image/ConvSinDA.png">
+*Figure 2. Training and validation accuracy*
+
+Figure 2 shows an overfitting feature. Our training accuracy increases to a value close to 100%, while our validation accuracy ranges from 50-60%.
