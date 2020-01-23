@@ -146,14 +146,14 @@ We use the Xception, VGG16, VGG19, InceptionV3, InceptionResNetV2 and DenseNet12
 
 *Table 4. Pre-trained networks (feature extraction, executing the data set on the convolutional basis and using an independent classifier)*
 
-|convolutional base|	acc|	loss|	Training and validation accuracy |
+|Convolutional base|	acc|	loss|	Training and validation accuracy |
 |:-----|:-----|:-----|:-----|
 Xception|	0.67|	3.23| 	<img src="image/ConvSinDA.png"> | 
-VGG16	0.63	1.49	 
-VGG19	0.59	1.55	 
-InceptionV3	0.67	3.23	 
-InceptionResNetV2	0.65	2.88	 
-DenseNet121	0.67	2.16	 
+VGG16|	0.63|	1.49|	<img src="image/ConvSinDA.png"> |  
+VGG19|	0.59|	1.55| <img src="image/ConvSinDA.png"> | 	 
+InceptionV3|	0.67|	3.23| <img src="image/ConvSinDA.png"> | 	 
+InceptionResNetV2|	0.65|	2.88|<img src="image/ConvSinDA.png"> | 	 
+DenseNet121|	0.67|	2.16| <img src="image/ConvSinDA.png"> | 	 
 
 
 
