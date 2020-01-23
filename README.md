@@ -116,3 +116,16 @@ Training an image classification model using only a few data is a common situati
 *Figure 2. Training and validation accuracy*
 
 Figure 2 shows an overfitting feature. Our training accuracy increases to a value close to 100%, while our validation accuracy ranges from 50-60%.
+
+Because we have relatively few training samples (4664 for 15 categories), overfitting is a concern. Then data augmentation was introduced, a technique to mitigate overfitting. Data augmentation generates more training data from existing training samples, the samples are augmented through a series of random transformations that produce credible-looking images, this helps the model to expose itself to more aspects of the data and to generalize better . In keras, you can configure a transformation number to perform on the input images, using an instance of the ImageDataGenerator class. In the classification of failures, related in Table 1, the orientation is a characteristic that is taken into account to define the type of failure; For this reason, only basic transformations such as flipping, moving and zooming on the images were chosen. When training the network using the data augmentation technique, our network will never see the same input twice. However, the entries you see are still strongly correlated, since they come from a small number of original images, we cannot produce new information, we can only mix the existing information, this might not be enough to completely get rid of the overfit. Other techniques that can help mitigate overfitting are dropout and regularization L2 (weight decay). To reduce overfitting, we will also add a dropout layer to our model, just before the densely connected classifier.
+
+Due to data augmentation and dropout, the overfitting was improved as seen in Figure 3, the training curve is better suited to the validation curve. We reach an accuracy of 60%, a relative improvement of 10% with respect to the initial model, which is not enough yet.
+
+<img src="image/ConvConDA.png">
+
+*Figure 3. Training and validation accuracy using data augmentation and dropout*
+
+
+
+
+
