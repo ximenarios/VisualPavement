@@ -173,3 +173,4 @@ Using a VGG16 base, unfreezing the last four layers, we reach a validation accur
 - Test architectures designed for small databases.
 - Increase the size of the training database.
 
+
