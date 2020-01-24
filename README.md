@@ -83,7 +83,7 @@ We use [Keras](https://keras.io/), the Python Deep Learning library. Keras workf
 - Fit the model.
 
 ### Convolutional Network 
-The convolutional neural networks (convnets) are constructed with a structure that will contain 3 types of layers: convolutional layer, reduction or pooling layer and classifier layer. Table 3 summarizes the architecture of the convnet used in the classification of faults, consists of four convolutional layers (Conv2D), followed by four layers of reduction (MaxPooling2D), one layer to flatten and two dense layers at the end. Our network is illustrated in Figure 1. [See code Convnet](https://github.com/ximenarios/VisualPavement/blob/otro/VisualPavConvnets.ipynb)
+The convolutional neural networks (convnets) are constructed with a structure that will contain 3 types of layers: convolutional layer, reduction or pooling layer and classifier layer. Table 3 summarizes the architecture of the convnet used in the classification of faults, consists of four convolutional layers (Conv2D), followed by four layers of reduction (MaxPooling2D), one layer to flatten and two dense layers at the end. Our network is illustrated in Figure 1. [See code Convnet](https://github.com/ximenarios/VisualPavement/blob/master/VisualPavConvnets.ipynb)
 
 *Table 3. Structure of the convnet*
 
@@ -141,7 +141,7 @@ The convnets used for image classification are composed of two parts: they begin
 
 *Figure 4. Pre-trained network*
 
-We use the Xception, VGG16, VGG19, InceptionV3, InceptionResNetV2 and DenseNet121 models as a convolutional basis. These architectures are publicly available and can be imported into Keras from the keras.applications module. Then we train a classifier composed of two dense layers, the final layer is a “softmax” layer of 15 outputs, we select the loss function 'categorical_crossentropy', the optimizer 'rmsprop' and as a metric to monitor training and tests 'acc'. Table 4 lists the performance of these architectures. [See code Pre-trained](https://github.com/ximenarios/VisualPavement/blob/otro/VisualPav_Preentrenada.ipynb)
+We use the Xception, VGG16, VGG19, InceptionV3, InceptionResNetV2 and DenseNet121 models as a convolutional basis. These architectures are publicly available and can be imported into Keras from the keras.applications module. Then we train a classifier composed of two dense layers, the final layer is a “softmax” layer of 15 outputs, we select the loss function 'categorical_crossentropy', the optimizer 'rmsprop' and as a metric to monitor training and tests 'acc'. Table 4 lists the performance of these architectures. [See code Pre-trained](https://github.com/ximenarios/VisualPavement/blob/b24bf2feae035b2af425da6905ff5d4c7b65528d/VisualPav_Preentrenada.ipynb)
 
 *Table 4. Pre-trained networks (feature extraction, executing the data set on the convolutional basis and using an independent classifier)*
 
@@ -159,7 +159,7 @@ We achieve a validation accuracy only slightly better than in the previous secti
 The level of generality of the representations extracted by convolution layers depends on the depth of the layer in the model. The first layers of the model extract maps of highly generic local features (such as visual borders, colors and textures), while the upper layers extract abstract concepts. So, if the new data set differs greatly from the data set in which the original model was trained, it is better to use only the first layers of the model to perform feature extraction, rather than using the entire convolutional base.
 
 #### Fine-tuning 
-Fine-tuning is another technique used to reuse models. It consists of unfreezing some of the upper layers of the convolutional base and training together the newly added part of the model and these upper layers. Fine-tuning slightly adjusts the most abstract representations of the model being reused, so that they are more relevant to the new problem. [See code Fine-tuning](https://github.com/ximenarios/VisualPavement/blob/otro/VisualPav_PreVGG16_Fine.ipynb)
+Fine-tuning is another technique used to reuse models. It consists of unfreezing some of the upper layers of the convolutional base and training together the newly added part of the model and these upper layers. Fine-tuning slightly adjusts the most abstract representations of the model being reused, so that they are more relevant to the new problem. [See code Fine-tuning](https://github.com/ximenarios/VisualPavement/blob/master/VisualPav_PreVGG16_Fine.ipynb)
 
 <img src="image/VGG16Fine.png">
 
