@@ -161,4 +161,4 @@ The level of generality of the representations extracted by convolution layers d
 #### Fine-tuning 
 Fine-tuning is another technique used to reuse models. It consists of unfreezing some of the upper layers of the convolutional base and training together the newly added part of the model and these upper layers. Fine-tuning slightly adjusts the most abstract representations of the model being reused, so that they are more relevant to the new problem.
 
-<img src="image/VGG16FineLS.png">
+<img src="image/VGG16Fine.png">
