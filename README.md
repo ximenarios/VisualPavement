@@ -8,24 +8,24 @@ There is no universal system to identify surface distress, the classification of
 
 *Table 1. INVIAS standard distress*
 
-| Deteriorations Type A| |
-|:-----|:-----|
-| **Deterioration Name** | **Code** |
-| Ahuellamiento	| AH |
-|Depresiones o hundimientos longitudinales|	DL |
-|Depresiones o hundimientos transversales|	DT |
-|Fisuras longitudinales por fatiga| FLF|
-|Fisuras piel de cocodrilo|	FPC|
-|Bacheos y parcheos|	B|
-|**Deteriorations Type B**| |
-|**Deterioration Name**|	**Code** |
-|Fisura longitudinal de junta de construcción|	FLJ|
-|Fisura transversal de junta de construcción|	FTJ|
+| Deteriorations Type A| |  |
+|:-----|:-----|:-----|
+| **Deterioration Name** | | **Code** |
+| Rutting |Ahuellamiento	| AH |
+| |Depresiones o hundimientos longitudinales |	DL |
+| |Depresiones o hundimientos transversales| DT |
+|Fatigue Cracking |Fisuras longitudinales por fatiga| FLF|
+|Alligator Cracking| Fisuras piel de cocodrilo|	FPC|
+|Patching| Bacheos y parcheos|	B|
+|**Deteriorations Type B**| |  |
+|**Deterioration Name**| | **Code** |
+|Longitudinal Joint Reflection Cracking| |Fisura longitudinal de junta de construcción|	FLJ|
+|Transverse Joint Reflection Cracking| Fisura transversal de junta de construcción|	FTJ|
 |Fisuras de contracción térmica|	FCT|
-|Fisuras parabólicas|	FP|
-|Fisura de borde|	FB|
-|Ojos de pescado|	O|
-|Desplazamiento, abultamiento o ahuellamiento de la mezcla|	DM|
+|Slippage Cracking (Fisuras parabólicas)|	FP|
+|Edge Cracking (Fisura de borde)|	FB|
+|Potholes (Ojos de pescado)|	O|
+|Bumps (Desplazamiento, abultamiento o ahuellamiento de la mezcla)|	DM|
 |Pérdida de la película de ligante|	PL|
 |Pérdida de agregados|	PA|
 |Descascaramiento|	D|
