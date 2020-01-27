@@ -8,35 +8,35 @@ There is no universal system to identify surface distress, the classification of
 
 *Table 1. INVIAS standard distress*
 
-| Deteriorations Type A| |
-|:-----|:-----|
-| **Deterioration Name** | **Code** |
-| Ahuellamiento	| AH |
-|Depresiones o hundimientos longitudinales|	DL |
-|Depresiones o hundimientos transversales|	DT |
-|Fisuras longitudinales por fatiga| FLF|
-|Fisuras piel de cocodrilo|	FPC|
-|Bacheos y parcheos|	B|
-|**Deteriorations Type B**| |
-|**Deterioration Name**|	**Code** |
-|Fisura longitudinal de junta de construcción|	FLJ|
-|Fisura transversal de junta de construcción|	FTJ|
-|Fisuras de contracción térmica|	FCT|
-|Fisuras parabólicas|	FP|
-|Fisura de borde|	FB|
-|Ojos de pescado|	O|
-|Desplazamiento, abultamiento o ahuellamiento de la mezcla|	DM|
-|Pérdida de la película de ligante|	PL|
-|Pérdida de agregados|	PA|
-|Descascaramiento|	D|
-|Pulimento de agregados|	PU|
-|Exudación|	EX|
-|Afloramiento de mortero|	AM|
-|Afloramiento de agua|	AA|
-|Desintegración de los bordes del pavimento|	DB|
-|Escalonamiento entrecalzada y berma|	ECB|
-|Erosión de las bermas|	EB|
-|Segregación|	S|
+|Deteriorations Type A|  |  |
+|:-----|:-----|:-----|
+|**Deterioration Name** | |**Code** |
+|Ahuellamiento	|Rutting |AH |
+|Depresiones o hundimientos longitudinales | |DL |
+|Depresiones o hundimientos transversales | |DT |
+|Fisuras longitudinales por fatiga |Fatigue Cracking |FLF |
+|Fisuras piel de cocodrilo |Alligator Cracking |FPC |
+|Bacheos y parcheos |Patching |B |
+|**Deteriorations Type B**| |  |
+|**Deterioration Name**| | **Code** |
+|Fisura longitudinal de junta de construcción |Longitudinal Joint Reflection Cracking |FLJ |
+|Fisura transversal de junta de construcción|Transverse Joint Reflection Cracking |FTJ |
+|Fisuras de contracción térmica| |FCT |
+|Fisuras parabólicas |Slippage Cracking |FP |
+|Fisura de borde| Edge Cracking |FB |
+|Ojos de pescado |Potholes |O |
+|Desplazamiento, abultamiento o ahuellamiento de la mezcla |Bumps |DM |
+|Pérdida de la película de ligante |Weathering |PL |
+|Pérdida de agregados |Raveling |PA |
+|Descascaramiento |Low Severity Pothole |D |
+|Pulimento de agregados |Polished Aggregate |PU |
+|Exudación |Bleeding |EX |
+|Afloramiento de mortero | |AM |
+|Afloramiento de agua |Water Bleeding |AA |
+|Desintegración de los bordes del pavimento |Edge Breakup |DB |
+|Escalonamiento entrecalzada y berma |Lane/Shoulder drop-off |ECB |
+|Erosión de las bermas |Shoulder Erosion |EB |
+|Segregación | |S |
 
 ## Training set
 There are a total of 1820 pavement images, with 5947 labels distributed according to what is related in Table 2.
