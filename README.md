@@ -48,7 +48,9 @@ The images were provided by a consulting company, taken on two roads in Colombia
 <img src="image/DatosE.png">
 
 *Figure 2. Training set*
+
 There are a total of 1820 pavement images, with 5947 labels distributed according to what is related in Table 2.
+
 *Table 2: Number of labels per fault*
 |Deterioration Name|	Code|	Labeled failures|
 |:-----|:-----|:---|
@@ -82,6 +84,7 @@ For some classes we have very little or no data, therefore it was decided to imp
 
 We are evaluating alternatives such as the use of the Google Street View API to increase the number of data for training. [See code Google_Streetview](https://github.com/ximenarios/VisualPavement/blob/master/Google_Streetview.ipynb)
 
+
 ## Building our network 
 A feature of deep learning is the ability to find interesting features in the training data by itself, without the need for manual engineering of features, this is achieved by having many training samples. However, the large amount of sample is relative to the size and depth of the network with which you are training. It is not possible to train a convnet to solve a complex problem with a few tens of samples, but a few hundred may potentially be sufficient if the model is small and well regularized and if the task is simple.
 
@@ -91,11 +94,14 @@ We use [Keras](https://keras.io/), the Python Deep Learning library. Keras workf
 - Configure the learning process by selecting the loss function, the optimizer and some metrics to monitor.
 - Fit the model.
 
+
 ### Convolutional Network 
-The convolutional neural networks (convnets) are constructed with a structure that will contain 3 types of layers: convolutional layer, reduction or pooling layer and classifier layer. Table 3 summarizes the architecture of the convnet used in the classification of faults, consists of four convolutional layers (Conv2D), followed by four layers of reduction (MaxPooling2D), one layer to flatten and two dense layers at the end. Our network is illustrated in Figure 2. [See code Convnet](https://github.com/ximenarios/VisualPavement/blob/master/VisualPavConvnets.ipynb)
+The convolutional neural networks (convnets) are constructed with a structure that will contain 3 types of layers: convolutional layer, reduction or pooling layer and classifier layer. Table 3 summarizes the architecture of the convnet used in the classification of faults, consists of four convolutional layers (Conv2D), followed by four layers of reduction (MaxPooling2D), one layer to flatten and two dense layers at the end. Our network is illustrated in Figure 3. [See code Convnet](https://github.com/ximenarios/VisualPavement/blob/master/VisualPavConvnets.ipynb)
+<img src="image/ConvNet.png">
+
+*Figure 3. Convolutional neural networks*
 
 *Table 3. Structure of the convnet*
-
 |Layer (type)|                  	Output Shape|
 |:-----|:-----|
 conv2d_1 (Conv2D)|            	(None, 148, 148, 32)            
@@ -116,17 +122,11 @@ As part of the "compilation" step we have:
 - An optimizer: 'rmsprop'
 - Metrics to monitor during training and testing: 'acc'
 
-<img src="image/ConvNet.png">
-
-*Figure 2. Convolutional neural networks*
-
-Training an image classification model using only a few data is a common situation, we reviewed a basic strategy to address the problem by training from scratch the model of the small convolutional network defined in Table 3, and this led us to an overfitting problem illustrated in Figure 3.
-
+Training an image classification model using only a few data is a common situation, we reviewed a basic strategy to address the problem by training from scratch the model of the small convolutional network defined in Table 3, and this led us to an overfitting problem illustrated in Figure 4.
 <img src="image/ConvSinDA.png">
 
-*Figure 3. Training and validation accuracy*
-
-Figure 3 shows an overfitting feature. Our training accuracy increases to a value close to 100%, while our validation accuracy ranges from 50-60%.
+*Figure 4. Training and validation accuracy*
+Figure 4 shows an overfitting feature. Our training accuracy increases to a value close to 100%, while our validation accuracy ranges from 50-60%.
 
 Because we have relatively few training samples (4664 for 15 categories), overfitting is a concern. Then data augmentation was introduced, a technique to mitigate overfitting. Data augmentation generates more training data from existing training samples, the samples are augmented through a series of random transformations that produce credible-looking images, this helps the model to expose itself to more aspects of the data and to generalize better . In keras, you can configure a transformation number to perform on the input images, using an instance of the ImageDataGenerator class. In the classification of failures, related in Table 1, the orientation is a characteristic that is taken into account to define the type of failure; For this reason, only basic transformations such as flipping, moving and zooming on the images were chosen. When training the network using the data augmentation technique, our network will never see the same input twice. However, the entries you see are still strongly correlated, since they come from a small number of original images, we cannot produce new information, we can only mix the existing information, this might not be enough to completely get rid of the overfit. Other techniques that can help mitigate overfitting are dropout and regularization L2 (weight decay). To reduce overfitting, we will also add a dropout layer to our model, just before the densely connected classifier.
 
