@@ -97,7 +97,7 @@ We use [Keras](https://keras.io/), the Python Deep Learning library. Keras workf
 
 ### Convolutional Network 
 The convolutional neural networks (convnets) are constructed with a structure that will contain 3 types of layers: convolutional layer, reduction or pooling layer and classifier layer. Table 3 summarizes the architecture of the convnet used in the classification of faults, consists of four convolutional layers (Conv2D), followed by four layers of reduction (MaxPooling2D), one layer to flatten and two dense layers at the end. Our network is illustrated in Figure 3. [See code Convnet](https://github.com/ximenarios/VisualPavement/blob/master/VisualPavConvnets.ipynb)
-<img src="image/ConvNet.png">
+<img src="image/ConvNet2.png">
 
 *Figure 3. Convolutional neural networks*
 
