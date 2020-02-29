@@ -1,8 +1,8 @@
 # VisualPavement
 
 ## Pavement distress detection and Classification
-To maintain a road infrastructure in good condition, periodic evaluations are needed to determine its status and plan appropriate intervention actions. The road evaluation contains tests of the surface condition, which can be performed manually or automatically. The objective of this research work is to propose a methodology for the automatic classification of surface faults in flexible pavements.
-
+To maintain a road infrastructure in good condition, periodic evaluations are needed to determine its status and plan appropriate intervention actions. The road evaluation contains tests of the surface condition, which can be performed manually or automatically. The objective of this research work is to propose a software tool for the automatic classification of surface faults in flexible pavements.
+<img src="image/visualPav.png">
 ## Surface distress in asphalt pavement
 There is no universal system to identify surface distress, the classification of the types of distress is done in comparison with the manuals developed by different institutions. In this investigation, the classification of the deteriorations is carried out in accordance with what is established in Colombia by the National Road Institute (INVIAS). INVIAS has adopted the VIZIR methodology as a tool to assess the condition of asphalt pavement deterioration through technical standard E-813( [INVIAS](https://www.invias.gov.co/index.php/archivo-y-documentos/documentos-tecnicos/manuales-de-inspeccion-de-obras/974-manual-para-la-inspeccion-visual-de-pavimentos-flexibles/filethis), 2013), standard considers two categories of deterioration: Type A (structural) and type B (functional). Table 1 presents a list of deficiencies and their identification code.
 
@@ -115,7 +115,7 @@ As part of the "compilation" step we have:
 - An optimizer: 'rmsprop'
 - Metrics to monitor during training and testing: 'acc'
 
-<img src="image/Figura1.png">
+<img src="image/ConvNet.png">
 
 *Figure 2. Convolutional neural networks*
 
@@ -128,6 +128,8 @@ Training an image classification model using only a few data is a common situati
 Figure 3 shows an overfitting feature. Our training accuracy increases to a value close to 100%, while our validation accuracy ranges from 50-60%.
 
 Because we have relatively few training samples (4664 for 15 categories), overfitting is a concern. Then data augmentation was introduced, a technique to mitigate overfitting. Data augmentation generates more training data from existing training samples, the samples are augmented through a series of random transformations that produce credible-looking images, this helps the model to expose itself to more aspects of the data and to generalize better . In keras, you can configure a transformation number to perform on the input images, using an instance of the ImageDataGenerator class. In the classification of failures, related in Table 1, the orientation is a characteristic that is taken into account to define the type of failure; For this reason, only basic transformations such as flipping, moving and zooming on the images were chosen. When training the network using the data augmentation technique, our network will never see the same input twice. However, the entries you see are still strongly correlated, since they come from a small number of original images, we cannot produce new information, we can only mix the existing information, this might not be enough to completely get rid of the overfit. Other techniques that can help mitigate overfitting are dropout and regularization L2 (weight decay). To reduce overfitting, we will also add a dropout layer to our model, just before the densely connected classifier.
+
+<img src="image/DataAug.png">
 
 Due to data augmentation and dropout, the overfitting was improved as seen in Figure 4, the training curve is better suited to the validation curve. We reach an accuracy of 60%, a relative improvement of 10% with respect to the initial model, which is not enough yet.
 
@@ -175,12 +177,12 @@ A VGG16 base was used, we unfreezing the base in different blocks and trained. T
 
 |Unfreezing Blocks|	acc|	loss|	Training and validation accuracy |
 |:-----|:-----|:-----|:-----|
-None|	0.53|	1.80| 	<img src="image/VGG16Fine.png"> | 
-block5_conv1|	0.69|	1.09|	<img src="image/VGG16Fine.png"> |  
-block4_conv1|	0.70|	1.29| <img src="image/VGG16Fine.png"> | 	 
-block3_conv1|	0.70|	1.24| <img src="image/VGG16Fine.png"> | 	 
-block2_conv1|	0.70|	1.31|<img src="image/VGG16Fine.png"> | 	 
-All|	0.73|	1.20| <img src="image/VGG16Fine.png"> | 	 
+None|	0.53|	1.80| 	<img src="image/VGG16_PreFine.png"> | 
+block5_conv1|	0.69|	1.09|	<img src="image/VGG16_block5Fine.png"> |  
+block4_conv1|	0.70|	1.29| <img src="image/VGG16_block4Fine.png"> | 	 
+block3_conv1|	0.70|	1.24| <img src="image/VGG16_block3Fine.png"> | 	 
+block2_conv1|	0.70|	1.31|<img src="image/VGG16_block2Fine.png"> | 	 
+All|	0.73|	1.20| <img src="image/VGG16_block1Fine.png"> | 	 
 
 Using this Fine-tuning technique on a VGG16 base, we reach a validation accuracy of up to 73%, which is still not enough. The following strategies are proposed to improve the model:
 - Try another type of classifier in the final stage.
