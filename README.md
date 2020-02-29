@@ -167,13 +167,22 @@ We achieve a validation accuracy only slightly better than in the previous secti
 The level of generality of the representations extracted by convolution layers depends on the depth of the layer in the model. The first layers of the model extract maps of highly generic local features (such as visual borders, colors and textures), while the upper layers extract abstract concepts. So, if the new data set differs greatly from the data set in which the original model was trained, it is better to use only the first layers of the model to perform feature extraction, rather than using the entire convolutional base.
 
 #### Fine-tuning 
-Fine-tuning is another technique used to reuse models. It consists of unfreezing some of the upper layers of the convolutional base and training together the newly added part of the model and these upper layers. Fine-tuning slightly adjusts the most abstract representations of the model being reused, so that they are more relevant to the new problem. [See code Fine-tuning](https://github.com/ximenarios/VisualPavement/blob/master/VisualPav_PreVGG16_Fine.ipynb)
+Fine-tuning is another technique used to reuse models. It consists of unfreezing some of the upper layers of the convolutional base and training together the newly added part of the model and these upper layers. Fine-tuning slightly adjusts the most abstract representations of the model being reused, so that they are more relevant to the new problem.
 
-<img src="image/VGG16Fine.png">
+A VGG16 base was used, we unfreezing the base in different blocks and trained. Table 6 lists the performance graphs of this technique.[See code Fine-tuning](https://github.com/ximenarios/VisualPavement/blob/master/VisualPav_PreVGG16_Fine.ipynb)
 
-*Figure 6. Training and validation accuracy (Fine-tuning)*
+*Table 6. Fine-tuning (unfreezing different blocks)*
 
-Using a VGG16 base, unfreezing the last four layers, we reach a validation accuracy of 0.66% which is still not enough (see figure 6). The following strategies are proposed to improve the model:
+|Unfreezing Blocks|	acc|	loss|	Training and validation accuracy |
+|:-----|:-----|:-----|:-----|
+None|	0.53|	1.80| 	<img src="image/VGG16Fine.png"> | 
+block5_conv1|	0.69|	1.09|	<img src="image/VGG16Fine.png"> |  
+block4_conv1|	0.70|	1.29| <img src="image/VGG16Fine.png"> | 	 
+block3_conv1|	0.70|	1.24| <img src="image/VGG16Fine.png"> | 	 
+block2_conv1|	0.70|	1.31|<img src="image/VGG16Fine.png"> | 	 
+All|	0.73|	1.20| <img src="image/VGG16Fine.png"> | 	 
+
+Using this Fine-tuning technique on a VGG16 base, we reach a validation accuracy of up to 73%, which is still not enough. The following strategies are proposed to improve the model:
 - Try another type of classifier in the final stage.
 - Try other pre-trained architectures that are designed for flooring.
 - Test dimensional reduction
