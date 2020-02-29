@@ -4,11 +4,13 @@
 ## Pavement distress detection and Classification
 To maintain a road infrastructure in good condition, periodic evaluations are needed to determine its status and plan appropriate intervention actions. The road evaluation contains tests of the surface condition, which can be performed manually or automatically. The objective of this research work is to propose a software tool for the automatic classification of surface faults in flexible pavements.
 <img src="image/visualPav.png">
+
 *Figure 1. VisualPav*
 
 
 ## Surface distress in asphalt pavement
 There is no universal system to identify surface distress, the classification of the types of distress is done in comparison with the manuals developed by different institutions. In this investigation, the classification of the deteriorations is carried out in accordance with what is established in Colombia by the National Road Institute (INVIAS). INVIAS has adopted the VIZIR methodology as a tool to assess the condition of asphalt pavement deterioration through technical standard E-813( [INVIAS](https://www.invias.gov.co/index.php/archivo-y-documentos/documentos-tecnicos/manuales-de-inspeccion-de-obras/974-manual-para-la-inspeccion-visual-de-pavimentos-flexibles/filethis), 2013), standard considers two categories of deterioration: Type A (structural) and type B (functional). Table 1 presents a list of deficiencies and their identification code.
+
 *Table 1. INVIAS standard distress*
 |Deteriorations Type A|  |  |
 |:-----|:-----|:-----|
@@ -44,6 +46,7 @@ There is no universal system to identify surface distress, the classification of
 ## Training set
 The images were provided by a consulting company, taken on two roads in Colombia (La Tebaida, Puerto Tejada). They were labeled manually by civil engineers from our work team, using [labelimg](https://github.com/tzutalin/labelImg#labelimg).
 <img src="image/DatosE.png">
+
 *Figure 2. Training set*
 There are a total of 1820 pavement images, with 5947 labels distributed according to what is related in Table 2.
 *Table 2: Number of labels per fault*
